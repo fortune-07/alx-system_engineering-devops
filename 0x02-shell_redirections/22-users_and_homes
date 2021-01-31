@@ -1,0 +1,5 @@
+#!/bin/bash
+while IFS=":" read -r a b c d e home_dir g 
+do 
+  echo $home_dir
+done < /etc/passwd | sort
