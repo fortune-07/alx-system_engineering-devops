@@ -1,0 +1,3 @@
+#!/bin/bash
+wget http://indeedeng.github.io/imhotep/files/nasa_19950801.tsv
+awk '{ print $1}' nasa_19950801.tsv | sort | uniq -c | sort -nr | head -n 11
