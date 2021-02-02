@@ -1,3 +1,2 @@
 #!/bin/bash
-printf  "Hello, World\n"
-# My first script
+printf "Hello, World\n"
