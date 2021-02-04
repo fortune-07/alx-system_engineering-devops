@@ -1,9 +1,2 @@
 #!/bin/bash
-fileCount=$(ls -l|wc -l)
-echo $fileCount
-for (( c=0; c<=$fileCount-2; c++ ))
-do
-      Lines1=`expr $Lines - 1`
-      tail -"$Lines1"f iacta
-      #exec $command
-done
+tail -1 iacta
