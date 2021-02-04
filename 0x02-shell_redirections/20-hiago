@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'iacta' | tr -d 'c'
+cat iacta | tr -d 'C' | tr -d 'c'
