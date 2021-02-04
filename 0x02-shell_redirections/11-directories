@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -l /etc | grep -c ^d
+ls -lRa /etc | grep -c ^d
