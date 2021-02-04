@@ -1,2 +1,2 @@
 #!/bin/bash
-rev<<<"This is a test"
+echo welcome | rev
