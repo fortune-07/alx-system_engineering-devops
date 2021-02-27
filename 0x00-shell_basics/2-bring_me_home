@@ -1,3 +1,2 @@
 #!/bin/bash
-cd /root
-exec $SHELL
+alias 0x00-shell_basics='cd /root'
