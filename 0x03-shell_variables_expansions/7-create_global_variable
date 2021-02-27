@@ -1,4 +1,2 @@
 #!/bin/bash
-export Holberton="Betty"
-echo $Holberton
-
+export HOLBERTON="Betty"
