@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# creates an RSA key pair
-ssh-keygen -b 4096 -f holberton -N betty
+# create a pair of ssh where betty is the pswd
+# 4096 the bits to create
+ssh-keygen -f holberton -b 4096 -N betty
