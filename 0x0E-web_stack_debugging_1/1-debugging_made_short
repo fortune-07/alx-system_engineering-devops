@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# script to listen the port 80
-sudo sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default /etc/nginx/sites-available/default
-sudo service nginx restart
-sudo pkill -o nginx
+# Bash script that configures a server so that nginx is running and listening
+# on port 80 of all server'sactive IPv4 IPs - short alternative
+sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
+pkill -f --signal 1 "/usr/sbin/nginx"
