@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
-# displays Holberton School 10 times.
+# This script displays "Holberton School" 10 times using while loop
 
-COUNTER=0
-while [ $COUNTER -lt 10 ]
+counter=1
+while [ $counter -le 10 ]
 do
-    echo "Holberton School"
-    let COUNTER=COUNTER+1
+	echo "Holberton School"
+	counter=$(( counter + 1 ))
+	# less preferred
+	# let counter=counter+1
 done
