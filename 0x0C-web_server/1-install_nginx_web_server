@@ -1,19 +1,11 @@
 #!/usr/bin/env bash
-# Install nginx and and make it return a page with a string 'Holberton School'
+# A Bash script that configures a new Ubuntu machine to respect the requirements:
+# Install nginx
+# Nginx should be listening on port 80
+# When querying Nginx at its root / with a GET request (requesting a page) using curl, it must return a page that contains the string Holberton School
 
-apt-get update
-apt-get -y install nginx
-
-mkdir -p /var/www/html
-touch /var/www/html/index.html
-echo "Holberton School" > /var/www/html/index.html
-
-printf %s "server {
-     listen      80 default_server;
-     listen      [::]:80 default_server;
-     root        /var/www/html;
-     index       index.html index.htm;
-}
-" > /etc/nginx/sites-available/default
-
-service nginx start
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install nginx
+echo "Holberton School" | sudo tee /var/www/html/index.html
+sudo service nginx start
